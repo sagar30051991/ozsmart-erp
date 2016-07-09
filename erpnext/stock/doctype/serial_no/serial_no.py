@@ -179,7 +179,7 @@ class SerialNo(StockController):
 
 def process_serial_no(sle):
 	item_det = get_item_details(sle.item_code)
-	# validate_serial_no(sle, item_det)
+	validate_serial_no(sle, item_det)
 	update_serial_nos(sle, item_det)
 
 def validate_serial_no(sle, item_det):
